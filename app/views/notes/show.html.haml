@@ -5,5 +5,6 @@
 
 		= link_to "All Notes", notes_path
 
-		= link_to "Edit Notes", edit_note_path(@note)
-		= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are You Sure?" }
+		.buttons
+		= link_to "Edit Notes", edit_note_path(@note), class: "button"
+		= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are You Sure?" }, class: "button"

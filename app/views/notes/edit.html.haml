@@ -1,5 +1,7 @@
-%h1 Edit Your Note
+.wrapper_with_padding
+	%h1 Edit Your Note
 
-= render 'form'
+	= render 'form'
 
-= link_to "Cancel", note_path
+	.buttons
+	= link_to "Cancel", note_path, class: "button"
